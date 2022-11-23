@@ -29,7 +29,12 @@ This project extends the web-coding knowledge base we are building in our boot c
 - Click any email address to open a new email in your default email client to the selected contact.  The address will automatically be added to the To: field.
 - Click any Engineer's GitHub link to open their GitHub profile in a new browser tab.
 
-Screen shots
+**Video Walkthrough**
+
+- Watch a [Demo Video](https://watch.screencastify.com/v/l44xAbW9SktMxuXvgp9j)
+
+
+**Screen Shots**
 
 ![Command-line Prompts](assets/images/team_profile_cli_input.png)
 

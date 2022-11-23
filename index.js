@@ -12,15 +12,13 @@ const Employee = require('./lib/employee');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
+const {htmlBegin, htmlEmployeeCard, htmlEnd} = require('./lib/html');
 
 // Constants for unchanging data items
 const githubUrl = 'https://github.com/';
 
 // Variables for changing data items
 let team = [];
-
-
-
 
 // Initiate application functionality
 function main() {
@@ -30,8 +28,6 @@ function main() {
   // First "team member" is a Manager
   addManager();
 }
-
-// function addEmployee() {}
 
 // Prompt for info and create a new Manager
 function addManager() {
@@ -75,12 +71,7 @@ function addOtherTeamMember() {
     })
 }
 
-// Call main function to start process
-main();
-
-
-//FUNCTION WISHLIST
-//------------------------------- 
+// add an engineer to the team
 function addEngineer() {
 
   console.log('Add an Engineer...');
@@ -101,6 +92,7 @@ function addEngineer() {
     })
 }
 
+// add an intern to the team
 function addIntern() {
 
   console.log('Add an Intern...');
@@ -121,8 +113,21 @@ function addIntern() {
     })
 }
 
+// Call main function to start process
+// main();
+
+
+//FUNCTION WISHLIST
+//------------------------------- 
+
 function finishTeam() {
   console.log('Finished team...')
 }
 
-function generateHTML() {}
+function generateHTML() {
+  console.log('Generating HTML...');
+  
+  console.log(`${htmlBegin}\n${htmlEmployeeCard}\n${htmlEnd}`);
+}
+
+// console.log(generateHTML());

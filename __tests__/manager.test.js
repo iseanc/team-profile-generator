@@ -12,7 +12,8 @@ describe('Manager', () => {
             name: undefined, 
             id: undefined, 
             email: undefined, 
-            officeNumber: undefined }));
+            position: "Manager",
+            officeNumber: undefined}));
     });
 
     it("should return an object with 'name', 'id', 'email', and 'githubId' properties populated with values when called with the 'new' keyword with values supplied to arguments", () => {
@@ -21,8 +22,10 @@ describe('Manager', () => {
       expect(e).toEqual(
           expect.objectContaining({ 
             name: "Ian D. Boss",
-             id: "123",
-              email: "dboss@dcompany.com", officeNumber: "5205551212" }));
+            id: "123",
+            email: "dboss@dcompany.com", 
+            position: "Manager",
+            officeNumber: "5205551212" }));
     });
   });
 });

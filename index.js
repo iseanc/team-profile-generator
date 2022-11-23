@@ -124,8 +124,12 @@ function createHTML(team) {
   console.log('Generating HTML...');
   
   //Calls function to generate employee HTML cards
-  console.log(`${htmlBegin}\n${createEmployeeHTMLCards(team)}\n${htmlEnd}`);
+  // console.log(`${htmlBegin}\n${createEmployeeHTMLCards(team)}\n${htmlEnd}`);
 
+  // write HTML to disk in ./dist folder
+  fs.writeFile(
+    './dist/index.html', 
+    `${htmlBegin}\n${createEmployeeHTMLCards(team)}\n${htmlEnd}`, (err) => err ? console.error(err) : console.log('Success!'));
 }
 
 // Create a set of employee HTML cards
